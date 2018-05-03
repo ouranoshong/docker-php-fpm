@@ -10,7 +10,7 @@ RUN pecl install mongodb && \
 
 RUN docker-php-ext-install zip
 
-RUN docker-php-ext-install opcache \
+RUN docker-php-ext-install opcache && \
     docker-php-ext-enable opcache
 
 USER root
